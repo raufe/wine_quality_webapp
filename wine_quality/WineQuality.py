@@ -2,8 +2,8 @@ import pickle
 
 class WineQuality (object):
     def __init__(self):
-        self.free_sulfur_dioxide = pickle.load(open('/Users/rauferibeiro/DataScience/Projetos/Estudos/sejaumdatascientist/deploy/free_sulfur_scale.pkl','rb'))
-        self.total_sulfur_dioxide = pickle.load(open('/Users/rauferibeiro/DataScience/Projetos/Estudos/sejaumdatascientist/deploy/total_sulfur_scale.pkl','rb'))
+        self.free_sulfur_dioxide = pickle.load(open('parameters/free_sulfur_scale.pkl','rb'))
+        self.total_sulfur_dioxide = pickle.load(open('parameters/Users/rauferibeiro/DataScience/Projetos/Estudos/sejaumdatascientist/deploy/total_sulfur_scale.pkl','rb'))
         
     def data_preparation(self, df):
         # rescale free sulfur
